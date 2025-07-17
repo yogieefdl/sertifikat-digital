@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Status Sertifikat Digital</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Status Sertifikat Digital</h2>
+    <p><strong>Koneksi:</strong> {{ scheme }}</p>
+    <p>Periksa ikon gembok atau peringatan di browser untuk memverifikasi sertifikat.</p>
+    <hr style="margin: 20px 0; border: none; height: 1px; background-color: #ffffff33;" />
+    <p style="font-size: 0.95em; line-height: 1.6;">
+      Sertifikat yang digunakan pada website ini adalah <strong>self-signed</strong>, artinya tidak ditandatangani oleh Certificate Authority (CA) resmi. 
+      Oleh karena itu, meskipun koneksi menggunakan <code>HTTPS</code>, browser akan menampilkan status <span style="color: yellow; font-weight: bold;">“Not Secure”</span> karena sertifikat tidak bisa diverifikasi.
+    </p>
+  </div>
+
+  <script src="/static/cursor.js"></script>
+
+</body>
+</html>
